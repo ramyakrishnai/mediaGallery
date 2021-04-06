@@ -1,0 +1,15 @@
+<div class="container-fluid mt-3 mb-3">
+<div class=" row">
+   <ng-container  *ngFor="let image of images" class="posRev">
+        <img [src]="image.image" [alt]="image.title" (click)="viewImage(image)" class="col-lg-3 col-md-12 p-2" />
+    </ng-container>
+</div>
+{{image}}
+<div *ngIf="image">
+    <div class="posAbs">
+        <div class="close" (click)="closeImage(image)">&times;</div>
+        <img src={{image?.image}} alt={{image?.title}} />
+    </div>
+</div>
+
+</div>

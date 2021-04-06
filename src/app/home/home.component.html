@@ -1,0 +1,58 @@
+ <div class="container-fluid">
+     <div class="row bannerImage">
+        <img src="../../assets/images/bannerImage.jpg" class="w-100" />
+        <div class="d-flex justify-content-center align-items-center flex-column text-white text-center">
+            <h1 class="">Welcome to Media Gallery.</h1>
+            <p ><b>Here you can find good collection of images.</b></p>
+        </div>
+    </div>
+    <div class="row pt-4 pb-3">
+        <div class="col-lg-8">
+            <h2>Artificial Intelligence (AI)</h2>
+            <p>Artificial intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think like humans and mimic their actions. Artificial intelligence (AI) makes it possible for machines to learn from experience, adjust to new inputs and perform human-like tasks. </p>
+            <p>AI means machine thinking as humans. These AI machines have the ability to chnage their algorithm. One of the best examples for AI would be Robo movie. </p>
+            <p>Facebook has two AI robots which are now shut down as they both started talking with each other in their own language, which humans can't understand. It is good to have a technology like AI but it's a disadvantage if we don't know how to control it.</p>
+        </div>
+        <div class="col-lg-4 d-flex align-items-center">
+            <img src="../../assets/images/ai.jpg" class="w-100"/>
+        </div>
+        <div class="col-12 mt-3 mb-3">
+            <h5>Types of Artificial Intelligence</h5>
+            <ol class="mt-2">
+                <li>Artificial Narrow Intelligence(ANI)</li>
+                <li>Artificial General Intelligence(AGI)</li>
+                <li>Artificial Super Intelligence(ASI)</li>
+            </ol>
+            <div class="row text-justify">
+                <div class="col-lg-4 p-3">
+                    <h6 class="text-center">ANI</h6>
+                    These Artificial Intelligence systems are designed to solve one single problem and would be able to execute a single task really well. By definition, they have narrow capabilities, like recommending a product for an e-commerce user or predicting the weather.
+                </div>
+                <div class="col-lg-4 p-3">
+                    <h6 class="text-center">AGI</h6>
+                    It’s defined as AI which has a human-level of cognitive function, across a wide variety of domains such as language processing, image processing, computational functioning and reasoning and so on.   
+                </div>
+                <div class="col-lg-4 p-3">
+                    <h6 class="text-center">ASI</h6>
+                    An Artificial Super Intelligence (ASI) system would be able to surpass all human capabilities. This would include decision making, taking rational decisions, and even includes things like making better art and building emotional relationships.
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <h5 class="mt-2">Advantages</h5>
+            <ul class="pt-2">
+                <li>Reduction in human error</li>
+                <li>Faster decisions</li>
+                <li>Helps in repetitive work</li>
+                <li>Efficient Communication</li>
+                <li>Medical applications</li>
+            </ul>
+        </div>
+       
+    </div>
+</div>
+
+<div *ngIf="showLogin" class="loginShow" @fade>
+    <span class="close"  (click)="loginoff()">&times;</span>
+    <app-login></app-login>
+</div>

@@ -1,0 +1,42 @@
+.container-fluid{
+    img:hover{
+        box-shadow: 0px 0px 5px -1px;
+        padding: 0px !important;
+    }
+  
+}
+
+.posAbs{
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.8);
+    padding: 30px;
+    position: fixed;
+    z-index: 9;
+    img{
+        width: 300px;
+        z-index: 9;
+        box-shadow: 0px 0px 9px 1px white !important;
+    }
+}
+
+.close{
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    position: absolute;
+    top: 45px;
+    right: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 1px 2px 8px 2px;
+    box-shadow: 0px 0px 0px 3px;
+    vertical-align: top;
+    opacity: 0.9;
+}
+

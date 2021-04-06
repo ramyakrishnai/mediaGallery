@@ -1,0 +1,29 @@
+<div class="d-flex  flex-column">
+<div class="text-center"><h3>Login</h3></div>
+<div *ngIf="LoginFailed" class="text-center mt-3 alert alert-danger">{{LoginFailed}}</div>
+<form (ngSubmit)="onFormSubmit(formLogin)" #formLogin="ngForm" class="align-self-center">
+    <div class="form-group">
+        <input type="text" 
+        placeholder="User Id"
+        class="form-control"
+        name="userId" 
+        ngModel
+       required 
+       email />
+    </div>
+    <div class="form-group">
+        <input type="text" 
+        placeholder="password" 
+        class="form-control"
+        name="userPassword"
+        ngModel
+        required />
+    </div>
+    <div class="form-group text-center">
+       <button type="submit" class="btn btn-warning">Sign In</button>
+    </div>
+</form>
+
+
+<p class="text-center">Sign In with us, to see the wonderful collection of Images.</p>
+</div>

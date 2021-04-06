@@ -1,0 +1,36 @@
+div > div > img{
+    max-height: 600px;
+}
+
+.bannerImage{
+    position: relative;
+    div{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+     
+    }
+}
+
+.loginShow{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0,1,0,0.7);
+}
+
+.close{
+    color: white;
+    opacity: 1;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+}
