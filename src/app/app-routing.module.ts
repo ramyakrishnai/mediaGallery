@@ -16,6 +16,10 @@ const routes: Routes = [{
     path:'gallery',
     component: GalleryComponent,
     canActivate: [AuthGaurdService]
+},
+{
+    path:'**',
+    component: HomeComponent
 }]
 @NgModule({
     exports:[RouterModule],
